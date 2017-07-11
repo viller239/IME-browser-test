@@ -7,6 +7,7 @@ tested on this site: https://rawgit.com/viller239/b64d5ae3ff110b3536779b5e69e730
 ## Scenario 1. Win7. Chinese(Simplified, Microsoft Pinyin New Experience Input Style). Z -> Space
 Given text `1234` place cursor after `2`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          'link  print log \n\n \n\[0,0]     <br />
 3.   selectionchange          '1234'                   [2,2]     
@@ -29,6 +30,7 @@ Given text `1234` place cursor after `2`
 9.   compositionend           '12在34'                  [3,3]     {"data":"在"}```<br />
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [2,2]     <br />
 3.   compositionstart         '1234'                   [2,2]     {"data":"","locale":""}<br />
@@ -44,6 +46,7 @@ Given text `1234` place cursor after `2`
 13.  MutationObserver         '12在34'                  [3,3]     <br />```
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []       <br /> 
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [2,2]     <br />
@@ -63,6 +66,7 @@ Given text `1234` place cursor after `2`
 ## Scenario 2. Win7. Chinese(Simplified, Microsoft Pinyin New Experience Input Style). R -> E -> Click on the first suggestion
 Given text `1234` place cursor after `1`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          '1234'                   [1,1]     <br />
 1.   keydown                  '1234'                   [1,1]     {"keyCode":229,"key":"Process","code":"KeyR"}<br />
@@ -91,6 +95,7 @@ Given text `1234` place cursor after `1`
 16.  compositionend           '1热234'                  [2,2]     {"data":"热"}<br />```
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [1,1]     <br />
 3.   compositionstart         '1234'                   [1,1]     {"data":"","locale":""}<br />
@@ -111,6 +116,7 @@ Given text `1234` place cursor after `1`
 18.  MutationObserver         '1热234'                  [2,2]   <br />```  
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []        <br />
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [1,1]     <br />
@@ -132,6 +138,7 @@ Given text `1234` place cursor after `1`
 ## Scenario 3. Win7. Korean. Z -> Space -> Z -> Space
 Given text `1234` place cursor after `1`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          '1234'                   [1,1]     <br />
 1.   keydown                  '1234'                   [1,1]     {"keyCode":229,"key":"Process","code":"KeyZ"}<br />
@@ -176,6 +183,7 @@ Given text `1234` place cursor after `1`
 8.   keyup                    '1ㅋ ㅋ 234'               [5,5]     {"keyCode":32,"key":" ","code":"Space"}<br />```
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [1,1]     <br />
 3.   compositionstart         '1234'                   [1,1]     {"data":"","locale":""}<br />
@@ -212,6 +220,7 @@ Given text `1234` place cursor after `1`
 6.   keyup                    '1ㅋ ㅋ 234'               [5,5]     {"keyCode":32,"key":" ","code":"Space"}<br />```
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []        <br />
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [1,1]     <br />
@@ -249,6 +258,7 @@ Given text `1234` place cursor after `1`
 ## Scenario 4. Win7. Korean. V -> B -> V -> Click outside
 Given text `1234` place cursor after `1`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          '1234'                   [1,1]     <br />
 1.   keydown                  '1234'                   [1,1]     {"keyCode":229,"key":"Process","code":"KeyV"}<br />
@@ -286,6 +296,7 @@ Given text `1234` place cursor after `1`
 17.  selectionchange          'link  print log \n\n \n\[0,0] <br />```
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [0,0]     <br />
 3.   selectionchange          '1234'                   [1,1]     <br />
@@ -306,6 +317,7 @@ Given text `1234` place cursor after `1`
 18.  selectionchange          'link print log\n\n\n\n\n[5,5]     <br />```
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []        <br />
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [1,1]     <br />
@@ -334,6 +346,7 @@ Given text `1234` place cursor after `1`
 ## Scenario 5. Win7. Korean. Q -> W -> E -> Enter
 Given text `1234` place cursor after `4`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          '1234'                   [4,4]     <br />
 1.   keydown                  '1234'                   [4,4]     {"keyCode":229,"key":"Process","code":"KeyQ"}<br />
@@ -384,6 +397,7 @@ Given text `1234` place cursor after `4`
 8.   keyup                    '1234ㅂㅈㄷ\n\n'            [0,0]     {"keyCode":13,"key":"Enter","code":"Enter"}<br />```
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [4,4]     <br />
 3.   compositionstart         '1234'                   [4,4]     {"data":"","locale":""}<br />
@@ -424,6 +438,7 @@ Given text `1234` place cursor after `4`
 6.   keyup                    '1234ㅂㅈㄷ\n\n'            [2,2]     {"keyCode":13,"key":"Enter","code":"Enter"}```<br />
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []        <br />
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [4,4]     <br />
@@ -464,6 +479,7 @@ Given text `1234` place cursor after `4`
 ## Scenario 6. Win7. JP Google IME. S -> A -> K -> U -> R -> A -> Space -> Click outside
 Given text `1234` place cursor after `4`
 <details><summary>Chrome</summary>
+
 ```1.   MutationObserver         'link  print log \n\n \n\[]        <br />
 2.   selectionchange          '1234'                   [4,4]     <br />
 1.   keydown                  '1234'                   [4,4]     {"keyCode":229,"key":"Process","code":"KeyS"}<br />
@@ -529,6 +545,7 @@ Given text `1234` place cursor after `4`
 10.  selectionchange          'link  print log \n\n \n\[0,0]   <br />```
 </details>
 <details><summary>Firefox</summary>
+
 ```1.   MutationObserver         'link print log\n\n\n\n\n[1,1]     <br />
 2.   selectionchange          '1234'                   [4,4]     <br />
 3.   compositionstart         '1234'                   [4,4]     {"data":"","locale":""}<br />
@@ -562,6 +579,7 @@ Given text `1234` place cursor after `4`
 31.  MutationObserver         '1234桜'                  [5,5]     <br />```
 </details>
 <details><summary>IE11</summary>
+
 ```1.   MutationObserver         'undefined'              []        <br />
 2.   selectionchange          'link print log \n\n \n\n[0,0]     <br />
 3.   selectionchange          '1234'                   [4,4]     <br />
